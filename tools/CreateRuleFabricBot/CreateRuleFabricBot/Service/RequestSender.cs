@@ -47,7 +47,7 @@ namespace CreateRuleFabricBot.Service
             {
                 int retryCount = 0;
             retry:
-                Colorizer.WriteLine("Deleting task [Yellow!{0}]...", taskId);
+                Colorizer.Write("Deleting task [Yellow!{0}]...", taskId);
                 try
                 {
                     DeleteTask(taskId);
